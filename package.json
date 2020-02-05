@@ -1,0 +1,23 @@
+{
+  "name": "linked-list-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "linkList.js",
+  "scripts": {
+    "start": "tsc linkList.ts && node linkList.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danish3r/linked-list-project-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danish3r/linked-list-project-js/issues"
+  },
+  "homepage": "https://github.com/danish3r/linked-list-project-js#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
