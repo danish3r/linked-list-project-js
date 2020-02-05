@@ -45,13 +45,13 @@ class LinkList {
     // below - if user put in an index to where the data will be placed
     else {
       let i = 0;
-      while (i < index) {
+      while (i < index - 1) {
         currentNode = currentNode.nextNode;
         i++;
       }
       newNode.nextNode = currentNode.nextNode;
       currentNode.nextNode = newNode;
-      onsole.log(data + " is added to " + index);
+      console.log(data + " is added to " + index);
       this.len++;
     }
   }
@@ -96,12 +96,14 @@ class LinkList {
   }
 }
 
-let myList = new LinkList(7);
-myList.add(5);
-myList.add(true);
-myList.add(90000000000000);
-myList.add("klk");
-myList.print();
-myList.remove(2);
-myList.print();
-myList.get(2);
+let mylist = new LinkList(10);
+mylist.add(20); // this adds to the end of the list
+mylist.add(30);
+mylist.add(100);
+mylist.add(19000);
+mylist.add("John");
+mylist.add(true);
+mylist.add(false);
+mylist.add(40, 3);
+mylist.remove(2);
+mylist.print();
